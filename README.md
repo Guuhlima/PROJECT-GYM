@@ -1,6 +1,6 @@
 # Project Gym
 
-App Next.js (App Router) para landing, login e área privada com visual neon/gradient. Backend ainda não conectado; dados de dashboard s�o mocks para navegação e testes de UI.
+App Next.js (App Router) para landing, login e área privada com visual neon/gradient. Backend ainda não conectado; dados de dashboard são mocks para navegação e testes de UI.
 
 ## Principais telas
 - Landing: hero com CTA e botão de login reutilizando o `Button` global.
