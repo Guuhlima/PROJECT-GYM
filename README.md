@@ -1,12 +1,12 @@
 # Project Gym
 
-App Next.js (App Router) para landing, login e �rea privada com visual neon/gradient. Backend ainda n�o conectado; dados de dashboard s�o mocks para navega��o e testes de UI.
+App Next.js (App Router) para landing, login e área privada com visual neon/gradient. Backend ainda não conectado; dados de dashboard s�o mocks para navegação e testes de UI.
 
 ## Principais telas
-- Landing: hero com CTA e bot�o de login reutilizando o `Button` global.
-- Login: card transl�cido com destaques e formul�rio.
-- Dashboard (privada): estat�sticas mockadas, treino do dia, metas, plano semanal, modal de termos/privacidade, toggle de tema escuro/claro e sidebar colaps�vel.
-- Termos/Privacidade: p�ginas estilizadas com Footer.
+- Landing: hero com CTA e botão de login reutilizando o `Button` global.
+- Login: card translúcido com destaques e formulário.
+- Dashboard (privada): estatásticas mockadas, treino do dia, metas, plano semanal, modal de termos/privacidade, toggle de tema escuro/claro e sidebar colapsável.
+- Termos/Privacidade: páginas estilizadas com Footer.
 
 ## Componentes
 - `src/components/ui/Button.tsx`: variantes primary/outline/ghost, tamanhos e suporte a `as="link"`.
@@ -22,17 +22,17 @@ npm run dev
 Acesse:
 - `/` landing
 - `/login`
-- `/dashboard` (usa mocks; toggle tema e sidebar s� em desktop)
+- `/dashboard` (usa mocks; toggle tema e sidebar só em desktop)
 - `/termos`, `/privacidade`
 
 ## Notas de desenvolvimento
 - Tailwind v4 via `@import "tailwindcss"` em `src/styles/globals.css`.
-- Rotas p�blicas em `src/pages/` (legacy) e App Router em `src/app/`.
-- Dados da dashboard est�o em arrays est�ticos no `page.tsx`; substituir por fetch do backend quando dispon�vel.
-- Evite acentos estranhos: alguns textos vieram com encoding quebrado, j� corrigidos nos componentes.
+- Rotas públicas em `src/pages/` (legacy) e App Router em `src/app/`.
+- Dados da dashboard estão em arrays estáticos no `page.tsx`; substituir por fetch do backend quando disponível.
+- Evite acentos estranhos: alguns textos vieram com encoding quebrado, já corrigidos nos componentes.
 
 ## Scripts
-- `npm run dev` � servidor de desenvolvimento
-- `npm run build` � build de produ��o
-- `npm run start` � serve build
-- `npm run lint` � ESLint
+- `npm run dev`  servidor de desenvolvimento
+- `npm run build`  build de produção
+- `npm run start`  serve build
+- `npm run lint`  ESLint
