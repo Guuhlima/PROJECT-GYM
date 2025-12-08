@@ -2,21 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import type { Theme } from "../Types/ThemeMode";
-
-export interface NavItem {
-    label: string;
-    href: string;
-    badge?: string;
-}
-
-interface SidebarProps {
-    theme: Theme;
-    items: NavItem[];
-    footerSlot?: React.ReactNode;
-    collapsed: boolean;
-    onToggle: () => void;
-}
+import { SidebarProps } from "../Types/SidebarProps";
 
 export default function Sidebar({ theme, items, footerSlot, collapsed, onToggle }: SidebarProps) {
     const pathname = usePathname();
@@ -52,13 +38,12 @@ export default function Sidebar({ theme, items, footerSlot, collapsed, onToggle 
                         <Link
                             key={item.href}
                             href={item.href}
-                            className={`flex items-center justify-between rounded-xl px-3 py-2 text-sm font-semibold transition ${
-                                active
-                                    ? "bg-gradient-to-r from-green-400 via-pink-500 to-purple-500 text-white shadow-lg"
-                                    : isDark
-                                        ? "text-gray-200 hover:bg-white/5"
-                                        : "text-slate-800 hover:bg-slate-100"
-                            }`}
+                            className={`flex items-center justify-between rounded-xl px-3 py-2 text-sm font-semibold transition ${active
+                                ? "bg-linear-to-r from-green-400 via-pink-500 to-purple-500 text-white shadow-lg"
+                                : isDark
+                                    ? "text-gray-200 hover:bg-white/5"
+                                    : "text-slate-800 hover:bg-slate-100"
+                                }`}
                         >
                             <span>{collapsed ? item.label.slice(0, 1) : item.label}</span>
                             {item.badge && !collapsed && (

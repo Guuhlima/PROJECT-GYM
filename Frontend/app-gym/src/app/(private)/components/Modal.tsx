@@ -1,15 +1,7 @@
 'use client';
 
 import React from "react";
-
-interface ModalProps {
-    title: string;
-    description?: string;
-    isOpen: boolean;
-    onClose: () => void;
-    children?: React.ReactNode;
-    primaryAction?: { label: string; onClick: () => void };
-}
+import { ModalProps } from "../Types/ModalProps";
 
 export default function Modal({ title, description, isOpen, onClose, children, primaryAction }: ModalProps) {
     if (!isOpen) return null;
@@ -45,7 +37,7 @@ export default function Modal({ title, description, isOpen, onClose, children, p
                     {primaryAction && (
                         <button
                             onClick={primaryAction.onClick}
-                            className="rounded-lg bg-gradient-to-r from-green-400 via-pink-500 to-purple-600 px-4 py-2 text-sm font-semibold text-white shadow-lg hover:brightness-110"
+                            className="rounded-lg bg-linear-to-r from-green-400 via-pink-500 to-purple-600 px-4 py-2 text-sm font-semibold text-white shadow-lg hover:brightness-110"
                         >
                             {primaryAction.label}
                         </button>

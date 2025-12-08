@@ -1,21 +1,28 @@
 import Footer from "@/components/Footer";
-import Button from "@/components/ui/Button";
+import Button from "@/components/ui/Button/Button";
+import Header from "../../components/ui/header/Header";
 
 export default function Page() {
     return (
         <div className="min-h-screen bg-neutral-900 text-white font-sans selection:bg-pink-500 selection:text-white flex flex-col">
             <div className="w-full container mx-auto p-6">
-                <div className="w-full flex items-center justify-between">
-                    <a className="flex items-center text-indigo-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="/">
-                        Project<span className="bg-clip-text text-transparent bg-linear-to-r from-green-400 via-pink-500 to-purple-500">Gym</span>
-                    </a>
-
-                    <div className="flex w-1/2 justify-end content-center gap-4">
+                <Header
+                    className="container mx-auto p-6"
+                    actionClassName="flex justify-end w-72"
+                    heading={
+                        <>
+                            Project
+                            <span className="bg-clip-text text-transparent bg-linear-to-r from-green-400 via-pink-500 to-purple-500">
+                                Gym
+                            </span>
+                        </>
+                    }
+                    action={
                         <Button as="link" href="/login" variant="outline" size="md">
                             Login
                         </Button>
-                    </div>
-                </div>
+                    }
+                />
             </div>
 
             <main className="flex-1">
@@ -43,6 +50,12 @@ export default function Page() {
                                     id="emailaddress"
                                     type="text"
                                     placeholder="seu@email.com"
+                                />
+                                <input
+                                    className="mt-5 shadow appearance-none border border-gray-600 bg-gray-900 rounded w-full p-3 text-white leading-tight focus:ring-2 focus:ring-pink-500 focus:outline-none transition hover:scale-[1.01] duration-300 ease-in-out"
+                                    id="name"
+                                    type="text"
+                                    placeholder="Digite seu nome"
                                 />
                             </div>
 

@@ -1,4 +1,4 @@
-import Button from "@/components/ui/Button";
+import Button from "@/components/ui/Button/Button";
 import Card from "../../components/Card";
 import Input from "../../components/Input";
 import { WeightCardProps } from "../Types";

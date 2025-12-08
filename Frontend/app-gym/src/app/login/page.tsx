@@ -1,35 +1,40 @@
 import Link from "next/link";
 import Footer from "@/components/Footer";
-import Button from "@/components/ui/Button";
+import Button from "@/components/ui/Button/Button";
+import Header from "@/components/ui/header/Header";
 
 export default function LoginPage() {
     return (
         <div className="relative min-h-screen overflow-hidden bg-neutral-950 text-white flex flex-col">
-            <div className="absolute inset-0 opacity-40">
+            <div className="absolute inset-0 opacity-40 pointer-events-none -z-10">
                 <div className="absolute -left-24 top-10 h-72 w-72 rounded-full bg-pink-500 blur-3xl"></div>
                 <div className="absolute right-0 top-40 h-64 w-64 rounded-full bg-green-400 blur-3xl"></div>
                 <div className="absolute left-1/3 bottom-10 h-56 w-56 rounded-full bg-purple-600 blur-3xl"></div>
             </div>
 
-            <header className="relative z-10 w-full">
-                <div className="container mx-auto flex items-center justify-between px-6 py-6">
-                    <Link href="/" className="flex items-center text-indigo-400 font-bold text-2xl lg:text-3xl">
+            <Header
+                className="container mx-auto p-6"
+                actionClassName="flex justify-end w-72"
+                heading={
+                    <>
                         Project
-                        <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500 ml-2">
+                        <span className="bg-clip-text text-transparent bg-linear-to-r from-green-400 via-pink-500 to-purple-500">
                             Gym
                         </span>
-                    </Link>
-
-                    <div className="flex items-center gap-3">
+                    </>
+                }
+                action={
+                    <>
                         <Button as="link" href="/" variant="ghost" size="md">
                             Home
                         </Button>
                         <Button as="link" href="/dashboard" variant="outline" size="md">
                             Dashboard
                         </Button>
-                    </div>
-                </div>
-            </header>
+                    </>
+
+                }
+            />
 
             <main className="container relative z-10 mx-auto flex-1 px-6 py-8 lg:py-12 grid lg:grid-cols-2 gap-12 items-center">
                 <div className="space-y-6">

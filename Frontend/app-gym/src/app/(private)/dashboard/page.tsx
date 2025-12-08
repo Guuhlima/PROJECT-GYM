@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import Footer from "@/components/Footer";
-import Button from "@/components/ui/Button";
+import Button from "@/components/ui/Button/Button";
 import Sidebar, { NavItem } from "@/app/(private)/components/Sidebar";
 import ThemeToggle from "@/app/(private)/components/ThemeToggle";
 import type { Theme } from "@/app/(private)/Types/ThemeMode";

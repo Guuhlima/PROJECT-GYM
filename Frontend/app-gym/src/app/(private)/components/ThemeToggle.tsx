@@ -1,11 +1,6 @@
 'use client';
 
-import type { Theme } from "../Types/ThemeMode";
-
-interface ThemeToggleProps {
-    theme: Theme;
-    onChange: (theme: Theme) => void;
-}
+import type { Theme, ThemeToggleProps } from "../Types/ThemeMode";
 
 export default function ThemeToggle({ theme, onChange }: ThemeToggleProps) {
     const isDark = theme === "dark";
