@@ -3,7 +3,8 @@
 import { useMemo, useState } from "react";
 import Footer from "@/components/Footer";
 import Button from "@/components/ui/Button/Button";
-import Sidebar, { NavItem } from "@/app/(private)/components/Sidebar";
+import Sidebar from "../components/Sidebar";
+import { NavItem } from "../Types/SidebarProps";
 import ThemeToggle from "@/app/(private)/components/ThemeToggle";
 import type { Theme } from "@/app/(private)/Types/ThemeMode";
 import { Stat, Goal, ModalType, PlanItem, WorkoutItem } from "./Types";
