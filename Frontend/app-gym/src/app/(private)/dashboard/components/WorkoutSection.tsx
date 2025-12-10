@@ -6,7 +6,7 @@ export default function WorkoutSection({ items, palette }: WorkoutSectionProps) 
         <Card surface={palette.surface} className="xl:col-span-2 space-y-6">
             <div className="flex items-center justify-between">
                 <div>
-                    <p className="text-sm text-pink-300">Treino de hoje</p>
+                    <p className="text-sm text-blue-300">Treino de hoje</p>
                     <h2 className="text-2xl font-semibold">Full Body + HIIT</h2>
                     <p className={palette.textMuted}>45-60 minutos - foco em performance e core</p>
                 </div>
@@ -25,10 +25,10 @@ export default function WorkoutSection({ items, palette }: WorkoutSectionProps) 
                         <div>
                             <p className="font-semibold">{item.name}</p>
                             <p className={`${palette.textMuted} text-sm`}>
-                                {item.sets} · {item.reps}
+                                {item.sets} x {item.reps}
                             </p>
                         </div>
-                        <span className="text-xs font-semibold text-pink-200">{item.intensity}</span>
+                        <span className="text-xs font-semibold text-blue-200">{item.intensity}</span>
                     </Card>
                 ))}
             </div>

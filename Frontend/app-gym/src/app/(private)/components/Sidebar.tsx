@@ -8,8 +8,8 @@ export default function Sidebar({ theme, items, footerSlot, collapsed, onToggle 
     const pathname = usePathname();
     const isDark = theme === "dark";
 
-    const baseBg = isDark ? "bg-neutral-900/80 border-gray-800" : "bg-white border-slate-200 shadow-lg";
-    const textMuted = isDark ? "text-gray-400" : "text-slate-500";
+    const baseBg = isDark ? "bg-slate-950/80 border-slate-800" : "bg-white border-slate-200 shadow-lg";
+    const textMuted = isDark ? "text-slate-400" : "text-slate-500";
 
     return (
         <aside
@@ -17,7 +17,7 @@ export default function Sidebar({ theme, items, footerSlot, collapsed, onToggle 
         >
             <div className="flex items-center justify-between">
                 <div className="space-y-1">
-                    <p className="text-xs uppercase tracking-[0.3em] text-pink-400">{collapsed ? "PG" : "Project Gym"}</p>
+                    <p className="text-xs uppercase tracking-[0.3em] text-blue-300">{collapsed ? "PG" : "Project Gym"}</p>
                     {!collapsed && <h2 className={`text-xl font-bold ${isDark ? "text-white" : "text-slate-900"}`}>Painel</h2>}
                     {!collapsed && <p className={`text-sm ${textMuted}`}>Navegacao rapida</p>}
                 </div>
@@ -27,7 +27,7 @@ export default function Sidebar({ theme, items, footerSlot, collapsed, onToggle 
                     className="rounded-full bg-white/10 px-2 py-1 text-sm text-white hover:bg-white/20 transition"
                     onClick={onToggle}
                 >
-                    {collapsed ? "»" : "«"}
+                    {collapsed ? ">>" : "<<"}
                 </button>
             </div>
 
@@ -39,9 +39,9 @@ export default function Sidebar({ theme, items, footerSlot, collapsed, onToggle 
                             key={item.href}
                             href={item.href}
                             className={`flex items-center justify-between rounded-xl px-3 py-2 text-sm font-semibold transition ${active
-                                ? "bg-linear-to-r from-green-400 via-pink-500 to-purple-500 text-white shadow-lg"
+                                ? "bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white shadow-lg"
                                 : isDark
-                                    ? "text-gray-200 hover:bg-white/5"
+                                    ? "text-slate-200 hover:bg-white/5"
                                     : "text-slate-800 hover:bg-slate-100"
                                 }`}
                         >

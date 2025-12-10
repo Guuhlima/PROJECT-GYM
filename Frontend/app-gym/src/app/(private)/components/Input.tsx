@@ -8,10 +8,10 @@ interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
 }
 
 const baseStyles =
-    "w-full rounded-lg px-4 py-3 transition focus:outline-none focus:ring-2 focus:ring-pink-500/40 focus:border-pink-500";
+    "w-full rounded-lg px-4 py-3 transition focus:outline-none focus:ring-2 focus:ring-blue-500/40 focus:border-blue-500";
 
 const toneStyles: Record<Theme, string> = {
-    dark: "bg-neutral-950 border border-gray-800 text-white placeholder:text-gray-500",
+    dark: "bg-slate-950 border border-slate-800 text-white placeholder:text-slate-500",
     light: "bg-white border border-slate-200 text-slate-900 placeholder:text-slate-400",
 };
 

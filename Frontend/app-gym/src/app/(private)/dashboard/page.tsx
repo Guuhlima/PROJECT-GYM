@@ -23,10 +23,10 @@ const navItems: NavItem[] = [
 ];
 
 const stats: Stat[] = [
-    { label: "Treinos concluidos", value: "12", detail: "+3 esta semana", color: "from-green-400 to-emerald-500" },
-    { label: "Calorias queimadas", value: "7.8k", detail: "media 520 kcal/dia", color: "from-pink-500 to-orange-500" },
-    { label: "Sessoes ativas", value: "5", detail: "cardio, perna, core", color: "from-purple-500 to-blue-500" },
-    { label: "Dias de consistencia", value: "21", detail: "meta: 30 dias", color: "from-amber-400 to-pink-500" },
+    { label: "Treinos concluidos", value: "12", detail: "+3 esta semana", color: "from-blue-400 to-blue-600" },
+    { label: "Calorias queimadas", value: "7.8k", detail: "media 520 kcal/dia", color: "from-sky-400 to-blue-700" },
+    { label: "Sessoes ativas", value: "5", detail: "cardio, perna, core", color: "from-indigo-400 to-blue-700" },
+    { label: "Dias de consistencia", value: "21", detail: "meta: 30 dias", color: "from-cyan-400 to-blue-600" },
 ];
 
 const todaysWorkout: WorkoutItem[] = [
@@ -73,9 +73,9 @@ export default function Dashboard() {
     return (
         <div className={`${palette.background} min-h-screen`}>
             <div className="absolute inset-0 pointer-events-none">
-                <div className="absolute -left-16 top-10 h-64 w-64 rounded-full bg-pink-500/20 blur-3xl"></div>
-                <div className="absolute right-0 top-24 h-72 w-72 rounded-full bg-green-400/20 blur-3xl"></div>
-                <div className="absolute left-1/3 bottom-8 h-60 w-60 rounded-full bg-purple-600/15 blur-3xl"></div>
+                <div className="absolute -left-16 top-10 h-64 w-64 rounded-full bg-blue-700/20 blur-3xl"></div>
+                <div className="absolute right-0 top-24 h-72 w-72 rounded-full bg-blue-500/20 blur-3xl"></div>
+                <div className="absolute left-1/3 bottom-8 h-60 w-60 rounded-full bg-slate-900/40 blur-3xl"></div>
             </div>
 
             <div className="relative z-10 flex min-h-screen">
@@ -99,7 +99,7 @@ export default function Dashboard() {
                 <div className="flex-1 flex flex-col">
                     <header className="container mx-auto px-6 pt-8 pb-4 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
                         <div>
-                            <p className="text-sm uppercase tracking-[0.3em] text-pink-400">Project Gym</p>
+                            <p className="text-sm uppercase tracking-[0.3em] text-blue-300">Project Gym</p>
                             <h1 className="text-3xl md:text-4xl font-bold leading-tight">Dashboard</h1>
                             <p className={`${palette.textMuted} mt-2 max-w-2xl`}>
                                 Mantenha-se alinhado com o plano de treinos, visualize progresso e prepare as proximas

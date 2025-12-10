@@ -8,7 +8,7 @@ export default function WeightCard({ palette, theme }: WeightCardProps) {
         <Card surface={palette.surface} className="space-y-5">
             <div className="flex items-center justify-between">
                 <div>
-                    <p className="text-sm text-pink-300">Registrar peso</p>
+                    <p className="text-sm text-blue-300">Registrar peso</p>
                     <h3 className="text-xl font-semibold">Ajuste sua meta semanal</h3>
                 </div>
                 <span className={`px-3 py-1 rounded-full text-xs font-semibold ${palette.pill}`}>Mock</span>

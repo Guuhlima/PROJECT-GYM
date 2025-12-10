@@ -11,10 +11,10 @@ const baseButtonClasses =
 
 const variantClasses: Record<Variant, string> = {
     primary:
-        "bg-gradient-to-r from-green-400 via-pink-500 to-purple-600 text-white shadow-lg shadow-pink-500/30 hover:brightness-110 hover:-translate-y-0.5 active:translate-y-0 focus-visible:outline-pink-400",
+        "bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white shadow-lg shadow-blue-500/30 hover:brightness-110 hover:-translate-y-0.5 active:translate-y-0 focus-visible:outline-blue-400",
     outline:
-        "border border-pink-400/60 text-pink-100 hover:bg-pink-500/10 hover:text-white focus-visible:outline-pink-300",
-    ghost: "text-gray-200 hover:text-white hover:bg-white/5 focus-visible:outline-pink-300",
+        "border border-blue-400/60 text-blue-100 hover:bg-blue-500/10 hover:text-white focus-visible:outline-blue-300",
+    ghost: "text-blue-100 hover:text-white hover:bg-white/5 focus-visible:outline-blue-300",
 };
 
 const sizeClasses: Record<Size, string> = {

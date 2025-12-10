@@ -23,7 +23,7 @@ export default function ThemeToggle({ theme, onChange }: ThemeToggleProps) {
 
 function SunIcon() {
     return (
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-amber-300">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-blue-200">
             <circle cx="12" cy="12" r="4" />
             <path d="M12 2v2m0 16v2m10-10h-2M4 12H2m15.07-7.07-1.41 1.41M6.34 17.66l-1.41 1.41m0-13.66 1.41 1.41m10.32 10.32 1.41 1.41" />
         </svg>

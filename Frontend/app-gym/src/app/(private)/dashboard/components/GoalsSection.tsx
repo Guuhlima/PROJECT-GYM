@@ -20,7 +20,7 @@ export default function GoalsSection({ goals, palette }: GoalsSectionProps) {
                         </div>
                         <div className="h-2 w-full overflow-hidden rounded-full bg-white/10">
                             <div
-                                className="h-full rounded-full bg-linear-to-r from-green-400 via-pink-500 to-purple-500"
+                                className="h-full rounded-full bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700"
                                 style={{ width: `${goal.progress}%` }}
                             />
                         </div>

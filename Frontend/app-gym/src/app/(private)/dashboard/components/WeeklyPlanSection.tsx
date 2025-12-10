@@ -14,7 +14,7 @@ export function WeeklyPlanSection({ items, palette }: WeeklyPlanSectionProps) {
             <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                 {items.map((item) => (
                     <Card key={item.day} surface={palette.surface} padding="p-3" rounded="rounded-xl">
-                        <p className="text-sm text-pink-300">{item.day}</p>
+                        <p className="text-sm text-blue-300">{item.day}</p>
                         <p className="font-semibold">{item.focus}</p>
                         <p className={`${palette.textMuted} text-sm`}>{item.status}</p>
                     </Card>
