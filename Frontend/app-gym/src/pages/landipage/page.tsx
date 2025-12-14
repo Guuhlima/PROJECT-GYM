@@ -6,7 +6,8 @@ import Header from "../../components/ui/header/Header";
 import { api } from "@/services/api";
 import { useState } from "react";
 import Swal from 'sweetalert2'
-
+import GradientText
+    from "@/components/ui/Gradient/GradientText";
 interface UserRegisterProps {
     name: string;
     email: string;
@@ -66,9 +67,14 @@ export default function Page() {
                     heading={
                         <>
                             Project
-                            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600">
+                            <GradientText
+                                colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+                                animationSpeed={4}
+                                showBorder={false}
+                                className="custom-class"
+                            >
                                 Gym
-                            </span>
+                            </GradientText>
                         </>
                     }
                     action={
@@ -85,7 +91,7 @@ export default function Page() {
                     <div className="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
                         <h1 className="my-4 text-3xl md:text-5xl text-white opacity-90 font-bold leading-tight text-center md:text-left">
                             Transforme
-                            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600">
+                            <span className="bg-clip-text text-transparent bg-linear-to-r from-blue-400 via-blue-500 to-blue-600">
                                 Seu Corpo
                             </span>
                             <br />

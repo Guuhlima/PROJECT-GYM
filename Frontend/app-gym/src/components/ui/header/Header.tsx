@@ -16,7 +16,7 @@ export default function Header({
 }: HeaderProps) {
   return (
     <header
-      className={`w-full flex items-center justify-between ${className}`.trim()}
+      className={`container px-6 py-4 rounded-2xl border border-slate-800/70 bg-slate-900/60 backdrop-blur-md shadow-lg shadow-blue-900/30 w-full flex items-center justify-between ${className}`.trim()}
       {...props}
     >
       <h2 className="text-2xl font-bold flex items-center gap-1">{heading}</h2>

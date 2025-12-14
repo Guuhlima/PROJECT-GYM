@@ -13,7 +13,7 @@ export default function TermosPage() {
             <header className="relative z-10 container mx-auto px-6 py-10 flex items-center justify-between">
                 <Link href="/" className="text-2xl font-bold text-white">
                     Project
-                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600">
+                    <span className="bg-clip-text text-transparent bg-linear-to-r from-blue-400 via-blue-500 to-blue-600">
                         Gym
                     </span>
                 </Link>

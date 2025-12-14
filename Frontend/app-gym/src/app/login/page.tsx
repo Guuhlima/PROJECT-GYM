@@ -2,6 +2,7 @@ import Link from "next/link";
 import Footer from "@/components/Footer";
 import Button from "@/components/ui/Button/Button";
 import Header from "@/components/ui/header/Header";
+import GradientText from "@/components/ui/Gradient/GradientText";
 
 export default function LoginPage() {
     return (
@@ -18,9 +19,14 @@ export default function LoginPage() {
                 heading={
                     <>
                         Project
-                        <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600">
+                        <GradientText
+                            colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+                            animationSpeed={4}
+                            showBorder={false}
+                            className="custom-class"
+                        >
                             Gym
-                        </span>
+                        </GradientText>
                     </>
                 }
                 action={
@@ -59,7 +65,7 @@ export default function LoginPage() {
                 </div>
 
                 <div className="relative">
-                    <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 opacity-40 blur-2xl"></div>
+                    <div className="absolute -inset-1 rounded-2xl bg-linear-to-r from-blue-500 via-blue-600 to-blue-700 opacity-40 blur-2xl"></div>
                     <div className="relative rounded-2xl border border-slate-800 bg-slate-900/80 p-8 shadow-2xl backdrop-blur-md">
                         <div className="mb-6 space-y-2">
                             <p className="text-sm text-blue-300">Bem-vindo de volta</p>
