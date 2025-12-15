@@ -1,5 +1,6 @@
 import "@/styles/globals.css";
 import type { Metadata } from "next";
+import { ThemeProvider, ThemeBackground } from "@/providers/ThemeProvide";
 
 export const metadata: Metadata = {
     title: "Project Gym",
@@ -13,7 +14,11 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="pt-BR">
-            <body>{children}</body>
+            <body>
+                <ThemeProvider defaultTheme="primary">
+                    <ThemeBackground>{children}</ThemeBackground>
+                </ThemeProvider>
+            </body>
         </html>
     );
 }

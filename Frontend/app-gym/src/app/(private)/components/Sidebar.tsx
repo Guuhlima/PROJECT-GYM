@@ -39,7 +39,7 @@ export default function Sidebar({ theme, items, footerSlot, collapsed, onToggle 
                             key={item.href}
                             href={item.href}
                             className={`flex items-center justify-between rounded-xl px-3 py-2 text-sm font-semibold transition ${active
-                                ? "bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white shadow-lg"
+                                ? "bg-linear-to-r from-blue-500 via-blue-600 to-blue-700 text-white shadow-lg"
                                 : isDark
                                     ? "text-slate-200 hover:bg-white/5"
                                     : "text-slate-800 hover:bg-slate-100"

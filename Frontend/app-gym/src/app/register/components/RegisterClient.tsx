@@ -179,7 +179,7 @@ export default function RegisterPage() {
                                     key={item}
                                     className="flex items-start gap-3 rounded-xl border border-slate-800 bg-white/5 px-4 py-3 backdrop-blur-sm shadow-sm shadow-blue-900/20"
                                 >
-                                    <span className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-cyan-400">
+                                    <span className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-linear-to-br from-blue-500 to-cyan-400">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 24 24"
@@ -201,7 +201,7 @@ export default function RegisterPage() {
 
                     <section className="relative">
                         <div
-                            className="absolute -inset-[1px] rounded-3xl bg-gradient-to-br from-blue-600/60 via-indigo-500/30 to-cyan-400/60 blur"
+                            className="absolute -inset-px rounded-3xl bg-linear-to-br from-blue-600/60 via-indigo-500/30 to-cyan-400/60 blur"
                             aria-hidden="true"
                         />
                         <div className="relative rounded-3xl border border-slate-800 bg-slate-900/80 px-6 py-8 shadow-2xl shadow-blue-900/40 backdrop-blur-xl">

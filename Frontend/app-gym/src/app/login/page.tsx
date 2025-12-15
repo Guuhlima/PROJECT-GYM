@@ -13,33 +13,35 @@ export default function LoginPage() {
                 <div className="absolute left-1/3 bottom-10 h-56 w-56 rounded-full bg-slate-900 blur-3xl"></div>
             </div>
 
-            <Header
-                className="container mx-auto p-6"
-                actionClassName="flex justify-end w-72"
-                heading={
-                    <>
-                        Project
-                        <GradientText
-                            colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
-                            animationSpeed={4}
-                            showBorder={false}
-                            className="custom-class"
-                        >
-                            Gym
-                        </GradientText>
-                    </>
-                }
-                action={
-                    <>
-                        <Button as="link" href="/" variant="ghost">
-                            Home
-                        </Button>
-                        <Button as="link" href="/dashboard" variant="outline">
-                            Dashboard
-                        </Button>
-                    </>
-                }
-            />
+            <div className="w-full container mx-auto p-6">
+                <Header
+                    className="container mx-auto p-6"
+                    actionClassName="flex justify-end w-72"
+                    heading={
+                        <>
+                            Project
+                            <GradientText
+                                colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+                                animationSpeed={4}
+                                showBorder={false}
+                                className="custom-class"
+                            >
+                                Gym
+                            </GradientText>
+                        </>
+                    }
+                    action={
+                        <>
+                            <Button as="link" href="/" variant="ghost">
+                                Home
+                            </Button>
+                            <Button as="link" href="/dashboard" variant="outline">
+                                Dashboard
+                            </Button>
+                        </>
+                    }
+                />
+            </div>
 
             <main className="container relative z-10 mx-auto flex-1 px-6 py-8 lg:py-12 grid lg:grid-cols-2 gap-12 items-center">
                 <div className="space-y-6">

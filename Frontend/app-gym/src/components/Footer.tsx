@@ -24,7 +24,7 @@ export default function Footer({ onTermsClick, onPrivacyClick, currentYear }: Fo
             <div className="container mx-auto flex flex-col gap-4 px-6 py-8 md:flex-row md:items-center md:justify-between">
                 <div className="flex items-center gap-2 text-lg font-semibold text-white">
                     <span>Project</span>
-                    <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 bg-clip-text text-transparent">
+                    <span className="bg-linear-to-r from-blue-400 via-blue-500 to-blue-600 bg-clip-text text-transparent">
                         Gym
                     </span>
                 </div>
