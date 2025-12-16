@@ -31,14 +31,14 @@ export default function LoginPage() {
                         </>
                     }
                     action={
-                        <>
+                        <div className="flex gap-2">
                             <Button as="link" href="/" variant="ghost">
                                 Home
                             </Button>
                             <Button as="link" href="/dashboard" variant="outline">
                                 Dashboard
                             </Button>
-                        </>
+                        </div>
                     }
                 />
             </div>
